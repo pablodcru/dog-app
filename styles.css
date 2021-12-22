@@ -1,0 +1,23 @@
+@keyframes spin {
+    /*from {
+        transform : rotateZ(0deg);
+    } si vamos a dar la vuelta entera, solo con el to 360 deg nos vale*/
+    to {
+        transform : rotateZ(360deg)
+    }
+}
+
+.spinner {
+    font-size : 50px;
+    text-align : center;
+    animation : 2s spin linear infinite;
+    display : none;
+}
+
+.dog-img {
+    display: none;              /*para poner bien el spinner*/
+}
+
+.show {
+    display : block;
+}
